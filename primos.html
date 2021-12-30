@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   </head>
+   <body>
+
+    <h1>Introduce un numero</h1>
+
+    <script>
+
+        //Definición de variables.
+
+       var n1, esprimo; 
+
+       n1=parseInt(prompt("introduce un numero")); 
+
+       esprimo=true; 
+
+       i=2; // 2 es la cifra más pequeña que nos puede mostrar que un número es o no primo.
+
+       //Creación del algoritmo.
+
+       do{
+         if(n1%i==0){
+             esprimo=false;
+
+          }
+           i++;
+
+      }while(i<n1);
+
+      //for(i=2; i<n1; i++){ ALGORITMO ALTERNATIVO.
+          //if(n1%i==0){
+              //esprimo=false;
+          //}
+      //}
+
+       if(n1==1){ //valoramos la variable booleana
+           document.write(n1+" no es primo, ni tampoco compuesto :)")
+       }else{
+
+        if(esprimo==true || n1==2){
+           document.write(n1+" es primo");
+       }else{
+        document.write(n1+" no es primo");
+       }
+
+
+       }
+
+       
+
+        
+
+        
+
+    </script>
+
+   </body>
+</html>
